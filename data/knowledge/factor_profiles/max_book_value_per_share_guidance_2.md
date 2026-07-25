@@ -1,0 +1,107 @@
+---
+field: max_book_value_per_share_guidance_2
+dataset: analyst4
+best_template: neg_rank_level
+best_sharpe: 0.69
+best_fitness: 0.49
+best_universe: TOP3000
+grade: INFERIOR
+submittability: blocked_LOW_SHARPE
+n_sims: 32
+regime_profile: bull-only
+n_variations_with_pnl: 5
+max_drawdown: 0.2873
+ann_vol: 0.1672
+hit_rate: 0.4486
+rolling_sharpe_min: -1.461
+rolling_sharpe_max: 1.934
+negated_best_sharpe: 0.69
+negated_best_template: neg_rank_level
+negated_best_fitness: 0.49
+n_negated_sims: 10
+direction_gap: 0.25
+---
+# max_book_value_per_share_guidance_2 (analyst4)
+
+*Book value per share - Maximum guidance value for the annual period*
+
+## Signal Profile
+- `rank(max_book_value_per_share_guidance_2)`: S=0.44, F=0.34, T=4.1%, INFERIOR (TOP200)
+- `rank(max_book_value_per_share_guidance_2 / close)`: S=0.06, F=0.02, T=1.6%, INFERIOR (TOP3000)
+- `rank(ts_delta(max_book_value_per_share_guidance_2, 5))`: S=0.54, F=0.20, T=33.7%, INFERIOR (TOP200)
+- `-rank(max_book_value_per_share_guidance_2)`: S=-0.27, F=-0.17, T=0.9%, INFERIOR (TOP3000)
+- `rank(-1 * ts_delta(max_book_value_per_share_guidance_2, 5))`: S=0.06, F=0.01, T=33.5%, INFERIOR (TOP3000)
+- `-ts_zscore(max_book_value_per_share_guidance_2, 63)`: S=0.10, F=0.02, T=22.4%, INFERIOR (TOP3000)
+- `ts_mean(max_book_value_per_share_guidance_2, 10)`: S=0.21, F=0.08, T=15.8%, INFERIOR (TOP3000)
+- `rank(ts_rank(max_book_value_per_share_guidance_2, 22))`: S=-0.13, F=-0.03, T=12.8%, INFERIOR (TOP3000)
+- `rank(-1 * max_book_value_per_share_guidance_2)`: S=0.69, F=0.49, T=0.7%, INFERIOR (TOP3000)
+- `rank(-1 * max_book_value_per_share_guidance_2 / close)`: S=-0.06, F=-0.02, T=1.6%, INFERIOR (TOP3000)
+
+## Check Summary
+- CONCENTRATED_WEIGHT: 13F/19P
+- LOW_FITNESS: 32F/0P
+- LOW_SHARPE: 32F/0P
+- LOW_SUB_UNIVERSE_SHARPE: 19F/10P
+- LOW_TURNOVER: 9F/23P
+
+## Temporal Behavior
+Headline (rank_level): Overall Sharpe 0.44, Consistency 80% positive years (4/5)
+Yearly breakdown:
+  - 2019: S=0.44 (weak), ret=+8.6%
+  - 2020: S=-1.15 (negative), ret=-15.0%
+  - 2021: S=1.03 (moderate), ret=+21.7%
+  - 2022: S=0.66 (moderate), ret=+6.4%
+  - 2023: S=0.92 (moderate), ret=+14.5%
+
+## Risk & Drawdown
+- Max drawdown: 28.73% over 548 days (recovered)
+- Annualized: return +7.4%, volatility 16.7% (fraction of booksize)
+- Hit rate: 44.9% positive days
+- Tail shape: skew -0.32, excess kurtosis +9.69
+
+## Rolling Sharpe
+Rolling 1-year Sharpe (headline curve): min -1.46, max 1.93, latest 0.91
+
+## Yearly & Monthly Returns
+Best year (by Sharpe): 2021; worst year: 2020
+Best month: +7.97%; worst month: -14.09%
+Positive months: 62%
+
+## Regime Profile
+Regime profile: **bull-only**
+- Bull: S=1.74
+- Sideways: S=0.50
+- Bear: S=-0.77
+
+## Negated Direction
+Best negated: `rank(-1 * max_book_value_per_share_guidance_2)` S=0.69, F=0.49, INFERIOR
+Direction gap: +0.25 (negated - positive best Sharpe). Negation slightly better.
+
+Negated template variants:
+- `rank(-1 * max_book_value_per_share_guidance_2)`: S=0.69, F=0.49, T=0.7%, INFERIOR (TOP3000)
+- `rank(-1 * max_book_value_per_share_guidance_2 / close)`: S=-0.06, F=-0.02, T=1.6%, INFERIOR (TOP3000)
+- `rank(-1 * ts_delta(max_book_value_per_share_guidance_2, 5))`: S=0.06, F=0.01, T=33.5%, INFERIOR (TOP3000)
+
+## Variation Breakdown
+| Expression | Universe | S | F | MaxDD | Consist | Regime |
+|---|---|---|---|---|---|---|
+| `rank(max_book_value_per_share_guidance_2)` | TOP200 | 0.44 | 0.34 | 28.7% | 80% | bull-only |
+| `rank(ts_delta(max_book_value_per_share_guidance_2, 5))` | TOP200 | 0.55 | 0.20 | 15.6% | 60% | bear-only |
+| `rank(max_book_value_per_share_guidance_2)` | TOP1000 | 0.27 | 0.17 | 25.1% | 60% | mixed |
+| `rank(max_book_value_per_share_guidance_2)` | TOP500 | 0.15 | 0.07 | 25.2% | 60% | mixed |
+| `rank(max_book_value_per_share_guidance_2 / close)` | TOP3000 | 0.06 | 0.02 | 53.0% | 60% | bull-only |
+
+## Correlation Notes
+Top correlates:
+- max_book_value_per_share_guidance: 1.000 (strongly positively correlated)
+- min_book_value_per_share_guidance: 1.000 (strongly positively correlated)
+- book_value_per_share_min_guidance_qtr: 1.000 (strongly positively correlated)
+- min_free_cashflow_per_share_guidance: 0.402 (moderately positively correlated)
+- shareholders_equity_min_guidance: 0.402 (moderately positively correlated)
+
+## Merge Candidates
+No positive-diversification merge partners found (Sharpe >= 0.8 pool).
+
+## Actionability
+Blocked by LOW_SHARPE. Consider template changes or neutralization adjustment.
+Untried templates: decay_linear, trade_when

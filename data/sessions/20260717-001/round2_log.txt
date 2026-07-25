@@ -1,0 +1,23 @@
+Submitting 18 Round-2 simulations...
+liab_ffo_buzz          N1rYjMXE     S=  1.53 F=  1.24 T=  9.6% GOOD~
+liab_ffo_oc            XgndlqrX     S=  2.05 F=  2.00 T=  8.1% EXCELLENT~
+liab_ffo_d5            mLbEzkax     S=  1.52 F=  1.23 T=  9.7% GOOD~
+liab_ffo_volgate       88QM6lAX     S=  1.65 F=  1.48 T=  4.2% GOOD~
+liab_ffo_decay10       pwl9zRKg     S=  1.55 F=  1.25 T=  6.7% GOOD~
+liab_ffo_buzzret       MPQJ8QR6     S=  1.96 F=  1.88 T=  9.7% GOOD~
+liab_ffo_no_drlt_buzzret QPVwl0EQ     S=  1.98 F=  1.77 T= 10.8% GOOD~
+nopio_ffo              GrLZ8zMZ     S=  1.85 F=  1.58 T=  4.5% GOOD~
+nopio_ffo_buzz         blqeP0KZ     S=  1.72 F=  1.35 T= 10.0% GOOD~
+nopio_ffo_volgate      RR8Gk3qe     S=  1.69 F=  1.40 T=  4.4% GOOD~
+nopio_no_ivaco         gJMnPn6m     S=  1.23 F=  0.84 T= 10.7% AVERAGE~
+nopio_market           KP9Wwjel     S=  0.96 F=  0.89 T=  3.6% INFERIOR
+debt_ffo_buzz          wpl0J1lv     S=  1.35 F=  0.96 T=  9.8% AVERAGE~
+debt_ffo_volgate       MPQJ58pn     S=  1.46 F=  1.18 T=  4.6% GOOD~
+l3_ffo_buzz            rKlZrWkd     S=  1.21 F=  0.80 T=  9.6% AVERAGE~
+ma_ffo_buzz            MPQJ5ajr     S=  1.38 F=  0.94 T=  9.8% AVERAGE~
+nopio_snr_ffo          vRlWJrK3     S=  1.72 F=  1.11 T= 17.0% GOOD~
+nopio_argmax_ffo       JjO65eej     S=  1.14 F=  0.71 T= 14.1% AVERAGE~
+
+Wrote data/sessions/20260717-001/round2_results.json
+Est. EXCELLENT+ (F>=2.0): 1/18
+  liab_ffo_oc XgndlqrX S=2.05 F=2.00

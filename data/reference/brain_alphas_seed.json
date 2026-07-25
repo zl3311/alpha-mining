@@ -1,0 +1,1066 @@
+[
+  {
+    "alpha_id": "d5nRrnXw",
+    "expression": "ts_decay_linear(rank(-1*ts_delta(returns,10))*rank(volume/adv20), 5)",
+    "sharpe": 1.54,
+    "fitness": 0.84,
+    "turnover": 0.3022,
+    "returns": 0.0901,
+    "drawdown": 0.0448,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/d5nRrnXw"
+  },
+  {
+    "alpha_id": "ZYjKvqo1",
+    "expression": "ts_decay_linear(rank(-1*ts_delta(returns,5)*ts_std_dev(returns,20))*rank(volume/adv20), 5)",
+    "sharpe": 1.65,
+    "fitness": 0.93,
+    "turnover": 0.3214,
+    "returns": 0.1015,
+    "drawdown": 0.0609,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/ZYjKvqo1"
+  },
+  {
+    "alpha_id": "rKbPMEpa",
+    "expression": "trade_when(ts_std_dev(returns,20)>0.02, ts_decay_linear(rank(-1*ts_delta(returns,5))*rank(volume/adv20),5), ts_std_dev(returns,20)<0.01)",
+    "sharpe": 1.56,
+    "fitness": 0.87,
+    "turnover": 0.2785,
+    "returns": 0.0862,
+    "drawdown": 0.0717,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/rKbPMEpa"
+  },
+  {
+    "alpha_id": "gJm955QQ",
+    "expression": "ts_decay_linear(rank(-1*returns*ts_std_dev(returns,10))*(volume/adv20), 5)",
+    "sharpe": 0.93,
+    "fitness": 0.48,
+    "turnover": 0.3289,
+    "returns": 0.0869,
+    "drawdown": 0.1313,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/gJm955QQ"
+  },
+  {
+    "alpha_id": "Xgk8xRxb",
+    "expression": "ts_decay_linear(rank(-1*ts_sum(returns,3)*ts_std_dev(returns,20)) * rank(volume/adv20), 5)",
+    "sharpe": 1.42,
+    "fitness": 0.89,
+    "turnover": 0.2919,
+    "returns": 0.1145,
+    "drawdown": 0.07,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/Xgk8xRxb"
+  },
+  {
+    "alpha_id": "e7nxPQZg",
+    "expression": "ts_decay_linear(rank((open/close-1)*ts_std_dev(returns,20))*rank(volume/adv20), 5)",
+    "sharpe": 1.88,
+    "fitness": 1.21,
+    "turnover": 0.2991,
+    "returns": 0.1243,
+    "drawdown": 0.0383,
+    "grade": "AVERAGE",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/e7nxPQZg"
+  },
+  {
+    "alpha_id": "vR5vbvld",
+    "expression": "ts_decay_linear(rank(-1*returns*ts_std_dev(returns,20)) * rank(volume/adv20), 5)",
+    "sharpe": 1.75,
+    "fitness": 1.12,
+    "turnover": 0.2999,
+    "returns": 0.122,
+    "drawdown": 0.05,
+    "grade": "AVERAGE",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/vR5vbvld"
+  },
+  {
+    "alpha_id": "zq5RL00K",
+    "expression": "ts_decay_linear(rank(-1 * returns) * (volume / adv20), 5)",
+    "sharpe": 0.94,
+    "fitness": 0.48,
+    "turnover": 0.3283,
+    "returns": 0.087,
+    "drawdown": 0.1329,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/zq5RL00K"
+  },
+  {
+    "alpha_id": "j2nrMr1W",
+    "expression": "trade_when(ts_std_dev(returns,20)>0.015, ts_decay_linear(rank(-1*returns)*(volume/adv20),5), ts_std_dev(returns,20)<0.008)",
+    "sharpe": 0.92,
+    "fitness": 0.48,
+    "turnover": 0.3129,
+    "returns": 0.0852,
+    "drawdown": 0.1289,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/j2nrMr1W"
+  },
+  {
+    "alpha_id": "zq5RLWO8",
+    "expression": "ts_decay_linear(rank(-1 * returns) * rank(volume / adv20), 5)",
+    "sharpe": 1.79,
+    "fitness": 1.14,
+    "turnover": 0.3013,
+    "returns": 0.1228,
+    "drawdown": 0.0401,
+    "grade": "AVERAGE",
+    "status": "ACTIVE",
+    "stage": "OS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/zq5RLWO8"
+  },
+  {
+    "alpha_id": "6XRe2VQK",
+    "expression": "trade_when(ts_std_dev(returns,20)>0.02, rank(ts_mean(close,10)-close), ts_std_dev(returns,20)<0.01)",
+    "sharpe": 1.4,
+    "fitness": 0.94,
+    "turnover": 0.2319,
+    "returns": 0.1044,
+    "drawdown": 0.0607,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/6XRe2VQK"
+  },
+  {
+    "alpha_id": "d5nRvGRj",
+    "expression": "rank((ts_mean(close,10)-close)/ts_std_dev(close,10)*(volume/adv20))",
+    "sharpe": 1.39,
+    "fitness": 0.85,
+    "turnover": 0.3302,
+    "returns": 0.124,
+    "drawdown": 0.0755,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/d5nRvGRj"
+  },
+  {
+    "alpha_id": "LLnd3zZ2",
+    "expression": "trade_when(ts_std_dev(returns,20)>0.02, rank(-1*ts_sum(returns,3)), ts_std_dev(returns,20)<0.01)",
+    "sharpe": 1.67,
+    "fitness": 1.1,
+    "turnover": 0.3642,
+    "returns": 0.1583,
+    "drawdown": 0.0734,
+    "grade": "AVERAGE",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/LLnd3zZ2"
+  },
+  {
+    "alpha_id": "QPn96O0K",
+    "expression": "rank((-1*ts_sum(returns,3))*(volume/adv20))",
+    "sharpe": 1.53,
+    "fitness": 0.93,
+    "turnover": 0.4486,
+    "returns": 0.1661,
+    "drawdown": 0.076,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/QPn96O0K"
+  },
+  {
+    "alpha_id": "1Yoz0jMM",
+    "expression": "ts_decay_linear(rank(-1*ts_sum(returns,3)), 3)",
+    "sharpe": 1.21,
+    "fitness": 0.73,
+    "turnover": 0.3809,
+    "returns": 0.1369,
+    "drawdown": 0.1028,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/1Yoz0jMM"
+  },
+  {
+    "alpha_id": "QPn967KM",
+    "expression": "rank((ts_mean(close,5)-close)*(volume/adv20))",
+    "sharpe": 1.69,
+    "fitness": 0.98,
+    "turnover": 0.4338,
+    "returns": 0.1451,
+    "drawdown": 0.0628,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/QPn967KM"
+  },
+  {
+    "alpha_id": "78xnmepQ",
+    "expression": "(-1 * rank(ts_sum(returns, 10)))",
+    "sharpe": 0.59,
+    "fitness": 0.31,
+    "turnover": 0.2268,
+    "returns": 0.0641,
+    "drawdown": 0.1162,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/78xnmepQ"
+  },
+  {
+    "alpha_id": "wp5EGEql",
+    "expression": "(-1 * rank(ts_sum(returns, 3)))",
+    "sharpe": 1.43,
+    "fitness": 0.87,
+    "turnover": 0.4451,
+    "returns": 0.1649,
+    "drawdown": 0.0844,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/wp5EGEql"
+  },
+  {
+    "alpha_id": "akNEzOAO",
+    "expression": "(-1 * rank(ts_sum(returns, 5)))",
+    "sharpe": 1.28,
+    "fitness": 0.77,
+    "turnover": 0.3967,
+    "returns": 0.1448,
+    "drawdown": 0.1055,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 4,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/akNEzOAO"
+  },
+  {
+    "alpha_id": "akNEz2Mx",
+    "expression": "rank(ts_mean(close, 20) - close)",
+    "sharpe": 1.1,
+    "fitness": 0.78,
+    "turnover": 0.1892,
+    "returns": 0.0951,
+    "drawdown": 0.0813,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/akNEz2Mx"
+  },
+  {
+    "alpha_id": "KPnEzRZ8",
+    "expression": "rank((-1 * ts_sum(returns, 5)) * (volume / adv20))",
+    "sharpe": 1.2,
+    "fitness": 0.72,
+    "turnover": 0.3554,
+    "returns": 0.1276,
+    "drawdown": 0.0998,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/KPnEzRZ8"
+  },
+  {
+    "alpha_id": "A1n7zWGY",
+    "expression": "rank(ts_mean(close, 10) - close)",
+    "sharpe": 1.28,
+    "fitness": 0.83,
+    "turnover": 0.2571,
+    "returns": 0.1081,
+    "drawdown": 0.078,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 8,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/A1n7zWGY"
+  },
+  {
+    "alpha_id": "78xnvpP1",
+    "expression": "rank((ts_mean(close, 10) - close) / ts_std_dev(close, 10))",
+    "sharpe": 1.38,
+    "fitness": 0.86,
+    "turnover": 0.321,
+    "returns": 0.1253,
+    "drawdown": 0.0845,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/78xnvpP1"
+  },
+  {
+    "alpha_id": "O0nxMXov",
+    "expression": "rank(ts_mean(close, 10) - close)",
+    "sharpe": 1.46,
+    "fitness": 0.89,
+    "turnover": 0.3316,
+    "returns": 0.1241,
+    "drawdown": 0.0735,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 4,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/O0nxMXov"
+  },
+  {
+    "alpha_id": "omngJkpJ",
+    "expression": "rank((ts_mean(close, 10) - close) * (volume / adv20))",
+    "sharpe": 1.42,
+    "fitness": 0.91,
+    "turnover": 0.2948,
+    "returns": 0.1202,
+    "drawdown": 0.0681,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/omngJkpJ"
+  },
+  {
+    "alpha_id": "GrneKnaZ",
+    "expression": "trade_when(ts_arg_max(volume, 5) == 0, rank(ts_delta(close, 5)), ts_arg_min(volume, 5) == 0)",
+    "sharpe": -1.25,
+    "fitness": -0.44,
+    "turnover": 0.7789,
+    "returns": -0.0983,
+    "drawdown": 0.4939,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/GrneKnaZ"
+  },
+  {
+    "alpha_id": "blNdrMnR",
+    "expression": "rank(-1 * (open / ts_delay(close, 1) - 1))",
+    "sharpe": 0.06,
+    "fitness": 0.01,
+    "turnover": 0.6749,
+    "returns": 0.0053,
+    "drawdown": 0.147,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/blNdrMnR"
+  },
+  {
+    "alpha_id": "xAed291p",
+    "expression": "rank(ts_mean(close, 10) - close)",
+    "sharpe": 1.36,
+    "fitness": 0.86,
+    "turnover": 0.2865,
+    "returns": 0.1145,
+    "drawdown": 0.0731,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/xAed291p"
+  },
+  {
+    "alpha_id": "ZYjKdP63",
+    "expression": "(-1 * rank(ts_std_dev(returns, 20)))",
+    "sharpe": 0.08,
+    "fitness": 0.03,
+    "turnover": 0.0728,
+    "returns": 0.0125,
+    "drawdown": 0.5617,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/ZYjKdP63"
+  },
+  {
+    "alpha_id": "88OeE8Qq",
+    "expression": "(-1 * rank(ts_sum(returns, 5)))",
+    "sharpe": 1.12,
+    "fitness": 0.67,
+    "turnover": 0.3489,
+    "returns": 0.1262,
+    "drawdown": 0.1126,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/88OeE8Qq"
+  },
+  {
+    "alpha_id": "P0nOo7P7",
+    "expression": "rank(ts_zscore((open / close - 1), 20) * (volume / adv20))",
+    "sharpe": 2.01,
+    "fitness": 0.89,
+    "turnover": 0.7063,
+    "returns": 0.1393,
+    "drawdown": 0.0454,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/P0nOo7P7"
+  },
+  {
+    "alpha_id": "JjnveG3O",
+    "expression": "rank(ts_zscore((open / close - 1), 60))",
+    "sharpe": 1.78,
+    "fitness": 0.8,
+    "turnover": 0.6911,
+    "returns": 0.1396,
+    "drawdown": 0.0541,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/JjnveG3O"
+  },
+  {
+    "alpha_id": "78xnLQG5",
+    "expression": "rank(ts_zscore((open / close - 1), 20))",
+    "sharpe": 1.91,
+    "fitness": 0.84,
+    "turnover": 0.6991,
+    "returns": 0.1353,
+    "drawdown": 0.0547,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/78xnLQG5"
+  },
+  {
+    "alpha_id": "QPn9vq9w",
+    "expression": "rank((open / close - 1) / ts_std_dev(returns, 20))",
+    "sharpe": 1.93,
+    "fitness": 0.95,
+    "turnover": 0.6971,
+    "returns": 0.1679,
+    "drawdown": 0.0668,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/QPn9vq9w"
+  },
+  {
+    "alpha_id": "RRN1EM51",
+    "expression": "trade_when(ts_std_dev(returns, 20) > 0.02, rank(open / close - 1), ts_std_dev(returns, 20) < 0.01)",
+    "sharpe": 2.07,
+    "fitness": 1.2,
+    "turnover": 0.4993,
+    "returns": 0.1678,
+    "drawdown": 0.0586,
+    "grade": "AVERAGE",
+    "status": "ACTIVE",
+    "stage": "OS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/RRN1EM51"
+  },
+  {
+    "alpha_id": "blNd6XqK",
+    "expression": "rank(((open / close - 1) / ts_std_dev(returns, 20)) * (volume / adv20))",
+    "sharpe": 2.03,
+    "fitness": 1.01,
+    "turnover": 0.6966,
+    "returns": 0.1718,
+    "drawdown": 0.0619,
+    "grade": "AVERAGE",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/blNd6XqK"
+  },
+  {
+    "alpha_id": "blNd8ozK",
+    "expression": "rank((-1 * ((1 - (open / close)) ** 1)))",
+    "sharpe": 1.83,
+    "fitness": 1.0,
+    "turnover": 0.6554,
+    "returns": 0.1956,
+    "drawdown": 0.0832,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 7,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/blNd8ozK"
+  },
+  {
+    "alpha_id": "QPn9Y5wp",
+    "expression": "rank((open / close - 1) * (volume / adv20))",
+    "sharpe": 1.96,
+    "fitness": 1.04,
+    "turnover": 0.6983,
+    "returns": 0.1966,
+    "drawdown": 0.0703,
+    "grade": "AVERAGE",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/QPn9Y5wp"
+  },
+  {
+    "alpha_id": "e7nx6qGp",
+    "expression": "rank(ts_mean((open / close - 1), 3))",
+    "sharpe": 1.62,
+    "fitness": 1.02,
+    "turnover": 0.4356,
+    "returns": 0.1712,
+    "drawdown": 0.0783,
+    "grade": "AVERAGE",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/e7nx6qGp"
+  },
+  {
+    "alpha_id": "omngo5jJ",
+    "expression": "rank((-1 * ((1 - (open / close)) ** 1)))",
+    "sharpe": 1.87,
+    "fitness": 0.99,
+    "turnover": 0.7011,
+    "returns": 0.1982,
+    "drawdown": 0.0808,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/omngo5jJ"
+  },
+  {
+    "alpha_id": "Grnegr1O",
+    "expression": "ts_decay_linear(rank((-1 * ((1 - (open / close)) ** 1))), 3)",
+    "sharpe": 1.68,
+    "fitness": 1.05,
+    "turnover": 0.461,
+    "returns": 0.1812,
+    "drawdown": 0.088,
+    "grade": "AVERAGE",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/Grnegr1O"
+  },
+  {
+    "alpha_id": "Xgk8Rjq5",
+    "expression": "rank((-1 * ((1 - (open / close)) ** 1)))",
+    "sharpe": 1.83,
+    "fitness": 1.0,
+    "turnover": 0.6554,
+    "returns": 0.1956,
+    "drawdown": 0.0832,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 7,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/Xgk8Rjq5"
+  },
+  {
+    "alpha_id": "2rvNmaYZ",
+    "expression": "rank((-1 * ((1 - (open / close)) ** 1)))",
+    "sharpe": 1.26,
+    "fitness": 0.59,
+    "turnover": 0.6954,
+    "returns": 0.1506,
+    "drawdown": 0.1247,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP500",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/2rvNmaYZ"
+  },
+  {
+    "alpha_id": "d5nR1VYE",
+    "expression": "rank((-1 * ((1 - (open / close)) ** 1)))",
+    "sharpe": 1.58,
+    "fitness": 0.94,
+    "turnover": 0.7229,
+    "returns": 0.2541,
+    "drawdown": 0.1069,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "MARKET"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/d5nR1VYE"
+  },
+  {
+    "alpha_id": "9q97W1aV",
+    "expression": "rank((-1 * ((1 - (open / close)) ** 1)))",
+    "sharpe": 1.58,
+    "fitness": 0.92,
+    "turnover": 0.5139,
+    "returns": 0.1732,
+    "drawdown": 0.0937,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 12,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/9q97W1aV"
+  },
+  {
+    "alpha_id": "N1nRVw8X",
+    "expression": "rank((-1 * ((1 - (open / close)) ** 1)))",
+    "sharpe": 1.77,
+    "fitness": 0.99,
+    "turnover": 0.6174,
+    "returns": 0.1913,
+    "drawdown": 0.0844,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 8,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/N1nRVw8X"
+  },
+  {
+    "alpha_id": "0mAMX2Z1",
+    "expression": "rank((-1 * ((1 - (open / close)) ** 1)))",
+    "sharpe": 1.69,
+    "fitness": 0.97,
+    "turnover": 0.5583,
+    "returns": 0.1838,
+    "drawdown": 0.0909,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 10,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/0mAMX2Z1"
+  },
+  {
+    "alpha_id": "zq5R8kMV",
+    "expression": "rank((-1 * ((1 - (open / close)) ** 1)))",
+    "sharpe": 1.87,
+    "fitness": 0.99,
+    "turnover": 0.7011,
+    "returns": 0.1982,
+    "drawdown": 0.0808,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/zq5R8kMV"
+  },
+  {
+    "alpha_id": "E5qep31m",
+    "expression": "(-1 * ts_corr(high, rank(volume), 5))",
+    "sharpe": 1.05,
+    "fitness": 0.34,
+    "turnover": 0.4071,
+    "returns": 0.0434,
+    "drawdown": 0.0872,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/E5qep31m"
+  },
+  {
+    "alpha_id": "QPn93RvQ",
+    "expression": "(rank((vwap - close)) / rank((vwap + close)))",
+    "sharpe": -0.13,
+    "fitness": -0.06,
+    "turnover": 0.1634,
+    "returns": -0.0345,
+    "drawdown": 1.3361,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/QPn93RvQ"
+  },
+  {
+    "alpha_id": "O0nxrrv7",
+    "expression": "(((high * low) ** 0.5) - vwap)",
+    "sharpe": 1.39,
+    "fitness": 0.58,
+    "turnover": 0.604,
+    "returns": 0.1057,
+    "drawdown": 0.0856,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/O0nxrrv7"
+  },
+  {
+    "alpha_id": "kqnZVkpz",
+    "expression": "sign(ts_delta(volume, 1)) * (-1 * ts_delta(close, 1))",
+    "sharpe": 1.07,
+    "fitness": 0.37,
+    "turnover": 0.6142,
+    "returns": 0.075,
+    "drawdown": 0.1476,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/kqnZVkpz"
+  },
+  {
+    "alpha_id": "le73lEqO",
+    "expression": "rank(close / ts_delay(close, 5))",
+    "sharpe": -1.08,
+    "fitness": -0.64,
+    "turnover": 0.3485,
+    "returns": -0.1241,
+    "drawdown": 0.7028,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/le73lEqO"
+  },
+  {
+    "alpha_id": "pwnK67vX",
+    "expression": "(-1 * ts_corr(rank(open), rank(volume), 10))",
+    "sharpe": 0.36,
+    "fitness": 0.07,
+    "turnover": 0.2859,
+    "returns": 0.0116,
+    "drawdown": 0.05,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/pwnK67vX"
+  },
+  {
+    "alpha_id": "qMn6X6X2",
+    "expression": "rank(ts_delta(close, 5))",
+    "sharpe": -1.36,
+    "fitness": -0.77,
+    "turnover": 0.3521,
+    "returns": -0.1115,
+    "drawdown": 0.5616,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/qMn6X6X2"
+  },
+  {
+    "alpha_id": "pwnKOYzj",
+    "expression": "rank(close)",
+    "sharpe": 0.07,
+    "fitness": 0.02,
+    "turnover": 0.0159,
+    "returns": 0.0094,
+    "drawdown": 0.5345,
+    "grade": "INFERIOR",
+    "status": "UNSUBMITTED",
+    "stage": "IS",
+    "config": {
+      "region": "USA",
+      "universe": "TOP3000",
+      "decay": 6,
+      "neutralization": "SUBINDUSTRY"
+    },
+    "platform_url": "https://platform.worldquantbrain.com/alpha/pwnKOYzj"
+  }
+]

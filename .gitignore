@@ -1,0 +1,105 @@
+# Environment and secrets
+.env
+*.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# uv
+.python-version
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Testing and linting
+.pytest_cache/
+.ruff_cache/
+*.log
+
+# Archived code and one-off scripts (not operational)
+context/archived/
+scripts/archived/
+
+# Local one-time scripts, sweeps, experiments (not canonical)
+# Anchored to repo root so it doesn't match src/alpha_mining/local/
+/local/
+
+# ============================================================
+# Data artifacts
+# ============================================================
+
+# Database files (operational, not knowledge)
+data/*.db
+
+# Local cache
+data/local_cache/
+
+# Large JSON field dumps (regenerable from BRAIN API)
+data/reference/brain_fields_raw.json
+data/reference/brain_fields_filtered.json
+
+# One-off payload files (operational, not knowledge)
+data/payloads/
+
+# V1 exploration strategy (superseded by knowledge/opportunities/)
+data/reference/field_exploration_strategy.md
+
+# Papers are referenced by citation only (see data/reference/papers/REFERENCES.md).
+# Downloaded PDFs, extracted markdown, and images stay local: they are too large for
+# git and redistributing full paper text is a copyright problem.
+data/reference/papers/**/*.pdf
+data/reference/papers/**/*.md
+data/reference/papers/**/*.txt
+!data/reference/papers/REFERENCES.md
+data/reference/papers/**/images/
+
+# Legacy papers path (migrated to data/reference/papers/)
+data/papers/
+
+# V1 monolithic files + experiments tree (superseded by V2 directory structure)
+# Removed 2026-06-04; ignored so they cannot be reintroduced.
+data/reference/factor_inventory.json
+data/reference/hypothesis_backlog.md
+data/reference/brain_availability_matrix.md
+data/experiments/
+
+# ============================================================
+# Cursor
+# ============================================================
+# Ignore all of .cursor except skills and automation reference docs
+.cursor/*
+!.cursor/skills
+.cursor/skills/*
+!.cursor/skills/*/
+.cursor/skills/*/*
+!.cursor/skills/*/SKILL.md
+!.cursor/automations/
+.cursor/automations/*
+!.cursor/automations/*.md
+
+# ============================================================
+# Server submodule (separate repo, deployed on HF Spaces)
+# Tracked as a git submodule (gitlink); do NOT ignore the path.
+# Submodule internals are managed by git via .gitmodules.
+# ============================================================

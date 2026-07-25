@@ -1,0 +1,422 @@
+[
+  {
+    "cluster": "pv1_other",
+    "field": "close",
+    "dataset": "pv1",
+    "alphas": 546513,
+    "coverage": 1.0
+  },
+  {
+    "cluster": "pv1_valuation",
+    "field": "cap",
+    "dataset": "pv1",
+    "alphas": 410049,
+    "coverage": 1.0
+  },
+  {
+    "cluster": "analyst4_income_earnings",
+    "field": "anl4_adjusted_netincome_ft",
+    "dataset": "analyst4",
+    "alphas": 43825,
+    "coverage": 0.8706
+  },
+  {
+    "cluster": "fundamental6_balance_sheet_assets",
+    "field": "assets",
+    "dataset": "fundamental6",
+    "alphas": 147826,
+    "coverage": 0.5
+  },
+  {
+    "cluster": "fundamental6_balance_sheet_liab",
+    "field": "liabilities",
+    "dataset": "fundamental6",
+    "alphas": 62652,
+    "coverage": 0.5
+  },
+  {
+    "cluster": "fundamental6_other",
+    "field": "cash",
+    "dataset": "fundamental6",
+    "alphas": 11756,
+    "coverage": 0.5
+  },
+  {
+    "cluster": "fundamental6_income_earnings",
+    "field": "ebitda",
+    "dataset": "fundamental6",
+    "alphas": 20319,
+    "coverage": 0.5
+  },
+  {
+    "cluster": "option8_ratio",
+    "field": "implied_volatility_call_270",
+    "dataset": "option8",
+    "alphas": 12883,
+    "coverage": 0.9729
+  },
+  {
+    "cluster": "fundamental6_income_expense",
+    "field": "operating_income",
+    "dataset": "fundamental6",
+    "alphas": 51233,
+    "coverage": 0.5
+  },
+  {
+    "cluster": "analyst4_cashflow",
+    "field": "anl4_capex_high",
+    "dataset": "analyst4",
+    "alphas": 8228,
+    "coverage": 0.6173
+  },
+  {
+    "cluster": "fundamental6_cashflow",
+    "field": "capex",
+    "dataset": "fundamental6",
+    "alphas": 27541,
+    "coverage": 0.5
+  },
+  {
+    "cluster": "fundamental6_balance_sheet_equity",
+    "field": "equity",
+    "dataset": "fundamental6",
+    "alphas": 22496,
+    "coverage": 0.5
+  },
+  {
+    "cluster": "fundamental6_income_revenue",
+    "field": "sales",
+    "dataset": "fundamental6",
+    "alphas": 36130,
+    "coverage": 0.5
+  },
+  {
+    "cluster": "pv13_other",
+    "field": "rel_num_part",
+    "dataset": "pv13",
+    "alphas": 6898,
+    "coverage": 0.7837
+  },
+  {
+    "cluster": "analyst4_income_expense",
+    "field": "anl4_ebitda_value",
+    "dataset": "analyst4",
+    "alphas": 14531,
+    "coverage": 0.8133
+  },
+  {
+    "cluster": "socialmedia12_sentiment",
+    "field": "scl12_buzz",
+    "dataset": "socialmedia12",
+    "alphas": 20785,
+    "coverage": 1.0
+  },
+  {
+    "cluster": "option9_ratio",
+    "field": "pcr_oi_270",
+    "dataset": "option9",
+    "alphas": 12721,
+    "coverage": 0.9838
+  },
+  {
+    "cluster": "fundamental2_balance_sheet_liab",
+    "field": "fn_liab_fair_val_l1_a",
+    "dataset": "fundamental2",
+    "alphas": 18614,
+    "coverage": 0.3604
+  },
+  {
+    "cluster": "fundamental6_valuation",
+    "field": "enterprise_value",
+    "dataset": "fundamental6",
+    "alphas": 39787,
+    "coverage": 0.5
+  },
+  {
+    "cluster": "analyst4_balance_sheet_equity",
+    "field": "anl4_bvps_flag",
+    "dataset": "analyst4",
+    "alphas": 15619,
+    "coverage": 0.8223
+  },
+  {
+    "cluster": "analyst4_balance_sheet_assets",
+    "field": "anl4_totassets_flag",
+    "dataset": "analyst4",
+    "alphas": 11280,
+    "coverage": 0.8122
+  },
+  {
+    "cluster": "option8_volatility_historical",
+    "field": "historical_volatility_180",
+    "dataset": "option8",
+    "alphas": 4458,
+    "coverage": 0.9796
+  },
+  {
+    "cluster": "news12_news",
+    "field": "news_tot_ticks",
+    "dataset": "news12",
+    "alphas": 2162,
+    "coverage": 0.9691
+  },
+  {
+    "cluster": "news12_other",
+    "field": "news_atr14",
+    "dataset": "news12",
+    "alphas": 3682,
+    "coverage": 0.8947
+  },
+  {
+    "cluster": "news18_analyst_rating",
+    "field": "rp_css_business",
+    "dataset": "news18",
+    "alphas": 3294,
+    "coverage": 0.5
+  },
+  {
+    "cluster": "fundamental2_other",
+    "field": "fn_op_lease_min_pay_due_a",
+    "dataset": "fundamental2",
+    "alphas": 1464,
+    "coverage": 0.6027
+  },
+  {
+    "cluster": "option8_other",
+    "field": "implied_volatility_mean_10",
+    "dataset": "option8",
+    "alphas": 7077,
+    "coverage": 0.9688
+  },
+  {
+    "cluster": "fundamental2_balance_sheet_assets",
+    "field": "fn_def_tax_assets_liab_net_a",
+    "dataset": "fundamental2",
+    "alphas": 1141,
+    "coverage": 0.7058
+  },
+  {
+    "cluster": "fundamental2_income_earnings",
+    "field": "fn_oth_income_loss_fx_transaction_and_tax_translation_adj_a",
+    "dataset": "fundamental2",
+    "alphas": 14452,
+    "coverage": 0.426
+  },
+  {
+    "cluster": "pv1_ratio",
+    "field": "split",
+    "dataset": "pv1",
+    "alphas": 18459,
+    "coverage": 1.0
+  },
+  {
+    "cluster": "model51_risk_systematic",
+    "field": "unsystematic_risk_last_360_days",
+    "dataset": "model51",
+    "alphas": 10178,
+    "coverage": 0.937
+  },
+  {
+    "cluster": "analyst4_balance_sheet_liab",
+    "field": "anl4_netdebt_flag",
+    "dataset": "analyst4",
+    "alphas": 13084,
+    "coverage": 0.8602
+  },
+  {
+    "cluster": "option9_other",
+    "field": "call_breakeven_20",
+    "dataset": "option9",
+    "alphas": 1723,
+    "coverage": 0.9824
+  },
+  {
+    "cluster": "pv1_cashflow",
+    "field": "dividend",
+    "dataset": "pv1",
+    "alphas": 11753,
+    "coverage": 1.0
+  },
+  {
+    "cluster": "model51_risk_beta",
+    "field": "beta_last_60_days_spy",
+    "dataset": "model51",
+    "alphas": 1673,
+    "coverage": 0.9752
+  },
+  {
+    "cluster": "fundamental2_income_expense",
+    "field": "fn_op_lease_rent_exp_a",
+    "dataset": "fundamental2",
+    "alphas": 2400,
+    "coverage": 0.6377
+  },
+  {
+    "cluster": "fundamental2_balance_sheet_equity",
+    "field": "fn_allocated_share_based_compensation_expense_q",
+    "dataset": "fundamental2",
+    "alphas": 1144,
+    "coverage": 0.6541
+  },
+  {
+    "cluster": "analyst4_income_revenue",
+    "field": "est_sales",
+    "dataset": "analyst4",
+    "alphas": 2681,
+    "coverage": 0.7458
+  },
+  {
+    "cluster": "news18_news",
+    "field": "rp_nip_inverstor",
+    "dataset": "news18",
+    "alphas": 2240,
+    "coverage": 0.5
+  },
+  {
+    "cluster": "news12_valuation",
+    "field": "news_cap",
+    "dataset": "news12",
+    "alphas": 6635,
+    "coverage": 0.8272
+  },
+  {
+    "cluster": "fundamental6_ratio",
+    "field": "current_ratio",
+    "dataset": "fundamental6",
+    "alphas": 6905,
+    "coverage": 0.5
+  },
+  {
+    "cluster": "option8_analyst_forecast",
+    "field": "parkinson_volatility_90",
+    "dataset": "option8",
+    "alphas": 1841,
+    "coverage": 0.9803
+  },
+  {
+    "cluster": "pv13_analyst_rating",
+    "field": "pv13_com_rk_au",
+    "dataset": "pv13",
+    "alphas": 2280,
+    "coverage": 0.9051
+  },
+  {
+    "cluster": "model51_other",
+    "field": "systematic_risk_last_90_days",
+    "dataset": "model51",
+    "alphas": 1949,
+    "coverage": 0.9619
+  },
+  {
+    "cluster": "socialmedia8_analyst_rating",
+    "field": "snt_social_value",
+    "dataset": "socialmedia8",
+    "alphas": 4976,
+    "coverage": 1.0
+  },
+  {
+    "cluster": "socialmedia8_other",
+    "field": "snt_social_volume",
+    "dataset": "socialmedia8",
+    "alphas": 4888,
+    "coverage": 1.0
+  },
+  {
+    "cluster": "news18_income_earnings",
+    "field": "rp_css_earnings",
+    "dataset": "news18",
+    "alphas": 1694,
+    "coverage": 0.5
+  },
+  {
+    "cluster": "news12_income_earnings",
+    "field": "news_pe_ratio",
+    "dataset": "news12",
+    "alphas": 2817,
+    "coverage": 0.9662
+  },
+  {
+    "cluster": "fundamental2_analyst_rating",
+    "field": "fnd2_oprlsfmpdcurr",
+    "dataset": "fundamental2",
+    "alphas": 1264,
+    "coverage": 0.6378
+  },
+  {
+    "cluster": "analyst4_other",
+    "field": "actuals_value_currency_code",
+    "dataset": "analyst4",
+    "alphas": 2108,
+    "coverage": 1.0
+  },
+  {
+    "cluster": "option9_analyst_forecast",
+    "field": "forward_price_30",
+    "dataset": "option9",
+    "alphas": 584,
+    "coverage": 0.9796
+  },
+  {
+    "cluster": "news12_ratio",
+    "field": "news_atr_ratio",
+    "dataset": "news12",
+    "alphas": 2304,
+    "coverage": 0.7967
+  },
+  {
+    "cluster": "socialmedia12_analyst_rating",
+    "field": "snt_value",
+    "dataset": "socialmedia12",
+    "alphas": 2526,
+    "coverage": 1.0
+  },
+  {
+    "cluster": "news18_balance_sheet_assets",
+    "field": "rp_css_assets",
+    "dataset": "news18",
+    "alphas": 1052,
+    "coverage": 0.5
+  },
+  {
+    "cluster": "news18_income_revenue",
+    "field": "rp_css_revenue",
+    "dataset": "news18",
+    "alphas": 1177,
+    "coverage": 0.5
+  },
+  {
+    "cluster": "news18_balance_sheet_equity",
+    "field": "rp_css_equity",
+    "dataset": "news18",
+    "alphas": 938,
+    "coverage": 0.5
+  },
+  {
+    "cluster": "option9_options_analytics",
+    "field": "put_breakeven_10",
+    "dataset": "option9",
+    "alphas": 934,
+    "coverage": 0.9795
+  },
+  {
+    "cluster": "pv13_valuation",
+    "field": "pv13_revere_index_cap",
+    "dataset": "pv13",
+    "alphas": 1783,
+    "coverage": 0.8495
+  },
+  {
+    "cluster": "option9_cashflow",
+    "field": "forward_price_10",
+    "dataset": "option9",
+    "alphas": 1044,
+    "coverage": 0.9796
+  },
+  {
+    "cluster": "news12_analyst_rating",
+    "field": "news_vol_stddev",
+    "dataset": "news12",
+    "alphas": 903,
+    "coverage": 0.9672
+  }
+]

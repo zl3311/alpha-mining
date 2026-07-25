@@ -1,0 +1,25 @@
+Submitting 16 Round-3 simulations...
+liab_oc_buzz               wpl0nKrY     S=  1.83 F=  1.64 T= 11.6%
+liab_oc_buzzret            FAILED: There was an error while running the simulation. Please try again or contact BRAIN support if this problem persists.
+liab_oc_sales              N1rY5ZJg     S=  2.23 F=  2.20 T=  7.8%
+liab_oc_no_drlt_buzzret    0mE1eWzk     S=  2.05 F=  1.76 T= 16.1%
+liab_oc_d1                 j20q9wJe     S=  2.06 F=  2.01 T=  8.1%
+liab_oc_volgate            np2LZo2w     S=  1.92 F=  1.89 T=  8.0%
+liab_oc_decay8             A1Poggll     S=  1.96 F=  1.86 T=  5.6%
+liab_oc_2x_ffo             6X95apvL     S=  2.05 F=  2.00 T=  8.1%
+nopio_oc_ffo               3qR8apVg     S=  2.33 F=  2.28 T=  8.6%
+nopio_oc_buzzret           d50NEaAK     S=  2.41 F=  2.30 T= 15.4%
+nopio_oc_buzz              zqmlP26K     S=  2.20 F=  1.98 T= 12.1%
+nopio_oc_volgate           MPQJKeOk     S=  2.26 F=  2.21 T=  8.5%
+debt_oc_ffo                rKlZJqK3     S=  1.85 F=  1.67 T=  8.2%
+debt_oc_buzzret            RR8G2g8b     S=  1.97 F=  1.78 T= 14.5%
+fair_oc_ffo                vRlW5wbQ     S=  1.84 F=  1.78 T=  8.9%
+fair_oc_buzzret            N1rYnomw     S=  1.88 F=  1.74 T= 15.6%
+
+Wrote data/sessions/20260717-001/round3_results.json
+F>2.0 candidates: 5
+  nopio_oc_buzzret d50NEaAK S=2.41 F=2.30
+  nopio_oc_ffo 3qR8apVg S=2.33 F=2.28
+  nopio_oc_volgate MPQJKeOk S=2.26 F=2.21
+  liab_oc_sales N1rY5ZJg S=2.23 F=2.20
+  liab_oc_d1 j20q9wJe S=2.06 F=2.01

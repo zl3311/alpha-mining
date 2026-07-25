@@ -1,0 +1,3 @@
+[submodule "server"]
+	path = server
+	url = https://github.com/zl3311/brain-submission-queue-server.git

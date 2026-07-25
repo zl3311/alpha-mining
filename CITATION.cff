@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "Alpha Mining: An LLM-Agent Pipeline for Formulaic Alpha Discovery on WorldQuant BRAIN"
+message: "If you use this repository or its research archive, please cite it as below."
+type: software
+authors:
+  - family-names: "Li"
+    given-names: "Zequn"
+repository-code: "https://github.com/zl3311/alpha-mining"
+abstract: >-
+  An archived LLM-agent pipeline that discovered, backtested, and submitted formulaic
+  trading alphas on the WorldQuant BRAIN platform, published together with the complete
+  research log it produced: 63 mining sessions, 68 submitted-alpha records across 60
+  mechanism families, 1,669 per-field factor profiles, and 28 documented dead ends.
+  The system used no planner or reinforcement learning; iteration compounded through a
+  file-based knowledge base that a language model read and appended to each session.
+keywords:
+  - quantitative-finance
+  - alpha-mining
+  - large-language-models
+  - llm-agents
+  - factor-investing
+  - worldquant-brain
+  - agent-skills
+  - research-archive
+license: MIT
+version: 1.0.0
+date-released: "2026-07-25"

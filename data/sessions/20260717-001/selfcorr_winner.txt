@@ -1,0 +1,9 @@
+  Loaded 47 ACTIVE book entries from data/book/
+  BRAIN auth OK (cookies: 1)
+
+  Fetching BRAIN /check for 1 alpha(s) (max wait 300s each)...
+    N1rY5ZJg: SELF_CORRELATION result=PASS value=0.6638 (attempt 1)
+
+                    Alpha     Grade     S     F | SelfCorr  Limit     Result | Top Corr Peer
+-------------------------------------------------------------------------------------------------------------------
+                 N1rY5ZJg         ?  0.00  0.00 |   0.6638   0.70       PASS | 0.664 (rKlo39p1 S=2.13)

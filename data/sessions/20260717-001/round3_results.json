@@ -1,0 +1,178 @@
+[
+  {
+    "tag": "liab_oc_buzz",
+    "expr": "ts_decay_linear(rank(abs(ts_delta(fn_liab_fair_val_a / close, 3))) + rank(-1 * equity / assets) + rank(anl4_ffo_flag) + rank(fnd6_ivaco / close) + rank(fnd6_drlt / close) + rank(open / close - 1) + rank(ts_mean(scl12_buzz, 5)), 5)",
+    "status": "DONE",
+    "alpha_id": "wpl0nKrY",
+    "error": "",
+    "sharpe": 1.83,
+    "fitness": 1.64,
+    "turnover": 0.1163,
+    "returns": 0.1003
+  },
+  {
+    "tag": "liab_oc_buzzret",
+    "expr": "ts_decay_linear(rank(abs(ts_delta(fn_liab_fair_val_a / close, 3))) + rank(-1 * equity / assets) + rank(anl4_ffo_flag) + rank(fnd6_ivaco / close) + rank(fnd6_drlt / close) + rank(open / close - 1) + rank(ts_mean(scl12_buzz, 5) * (-1 * returns)), 5)",
+    "status": "FAILED",
+    "alpha_id": "",
+    "error": "There was an error while running the simulation. Please try again or contact BRAIN support if this problem persists.",
+    "sharpe": null,
+    "fitness": null,
+    "turnover": null,
+    "returns": null
+  },
+  {
+    "tag": "liab_oc_sales",
+    "expr": "ts_decay_linear(rank(abs(ts_delta(fn_liab_fair_val_a / close, 3))) + rank(-1 * equity / assets) + rank(anl4_ffo_flag) + rank(fnd6_ivaco / close) + rank(fnd6_drlt / close) + rank(open / close - 1) + rank(sales_estimate_count_quarterly), 5)",
+    "status": "DONE",
+    "alpha_id": "N1rY5ZJg",
+    "error": "",
+    "sharpe": 2.23,
+    "fitness": 2.2,
+    "turnover": 0.0781,
+    "returns": 0.1219
+  },
+  {
+    "tag": "liab_oc_no_drlt_buzzret",
+    "expr": "ts_decay_linear(rank(abs(ts_delta(fn_liab_fair_val_a / close, 3))) + rank(-1 * equity / assets) + rank(anl4_ffo_flag) + rank(fnd6_ivaco / close) + rank(open / close - 1) + rank(ts_mean(scl12_buzz, 5) * (-1 * returns)), 5)",
+    "status": "DONE",
+    "alpha_id": "0mE1eWzk",
+    "error": "",
+    "sharpe": 2.05,
+    "fitness": 1.76,
+    "turnover": 0.1611,
+    "returns": 0.1181
+  },
+  {
+    "tag": "liab_oc_d1",
+    "expr": "ts_decay_linear(rank(abs(ts_delta(fn_liab_fair_val_a / close, 1))) + rank(-1 * equity / assets) + rank(anl4_ffo_flag) + rank(fnd6_ivaco / close) + rank(fnd6_drlt / close) + rank(open / close - 1), 5)",
+    "status": "DONE",
+    "alpha_id": "j20q9wJe",
+    "error": "",
+    "sharpe": 2.06,
+    "fitness": 2.01,
+    "turnover": 0.0811,
+    "returns": 0.1188
+  },
+  {
+    "tag": "liab_oc_volgate",
+    "expr": "trade_when(ts_std_dev(returns, 20) > 0.02, ts_decay_linear(rank(abs(ts_delta(fn_liab_fair_val_a / close, 3))) + rank(-1 * equity / assets) + rank(anl4_ffo_flag) + rank(fnd6_ivaco / close) + rank(fnd6_drlt / close) + rank(open / close - 1), 5), ts_std_dev(returns, 20) < 0.01)",
+    "status": "DONE",
+    "alpha_id": "np2LZo2w",
+    "error": "",
+    "sharpe": 1.92,
+    "fitness": 1.89,
+    "turnover": 0.0804,
+    "returns": 0.1215
+  },
+  {
+    "tag": "liab_oc_decay8",
+    "expr": "ts_decay_linear(rank(abs(ts_delta(fn_liab_fair_val_a / close, 3))) + rank(-1 * equity / assets) + rank(anl4_ffo_flag) + rank(fnd6_ivaco / close) + rank(fnd6_drlt / close) + rank(open / close - 1), 8)",
+    "status": "DONE",
+    "alpha_id": "A1Poggll",
+    "error": "",
+    "sharpe": 1.96,
+    "fitness": 1.86,
+    "turnover": 0.0556,
+    "returns": 0.1128
+  },
+  {
+    "tag": "liab_oc_2x_ffo",
+    "expr": "ts_decay_linear(rank(abs(ts_delta(fn_liab_fair_val_a / close, 3))) + rank(-1 * equity / assets) + rank(anl4_ffo_flag) * 2 + rank(fnd6_ivaco / close) + rank(fnd6_drlt / close) + rank(open / close - 1), 5)",
+    "status": "DONE",
+    "alpha_id": "6X95apvL",
+    "error": "",
+    "sharpe": 2.05,
+    "fitness": 2.0,
+    "turnover": 0.0812,
+    "returns": 0.1191
+  },
+  {
+    "tag": "nopio_oc_ffo",
+    "expr": "ts_decay_linear(rank(abs(ts_delta(fnd6_nopio / close, 3))) + rank(-1 * equity / assets) + rank(anl4_ffo_flag) + rank(fnd6_ivaco / close) + rank(fnd6_drlt / close) + rank(open / close - 1), 5)",
+    "status": "DONE",
+    "alpha_id": "3qR8apVg",
+    "error": "",
+    "sharpe": 2.33,
+    "fitness": 2.28,
+    "turnover": 0.0865,
+    "returns": 0.1192
+  },
+  {
+    "tag": "nopio_oc_buzzret",
+    "expr": "ts_decay_linear(rank(abs(ts_delta(fnd6_nopio / close, 3))) + rank(-1 * equity / assets) + rank(anl4_ffo_flag) + rank(fnd6_ivaco / close) + rank(fnd6_drlt / close) + rank(open / close - 1) + rank(ts_mean(scl12_buzz, 5) * (-1 * returns)), 5)",
+    "status": "DONE",
+    "alpha_id": "d50NEaAK",
+    "error": "",
+    "sharpe": 2.41,
+    "fitness": 2.3,
+    "turnover": 0.1537,
+    "returns": 0.1398
+  },
+  {
+    "tag": "nopio_oc_buzz",
+    "expr": "ts_decay_linear(rank(abs(ts_delta(fnd6_nopio / close, 3))) + rank(-1 * equity / assets) + rank(anl4_ffo_flag) + rank(fnd6_ivaco / close) + rank(fnd6_drlt / close) + rank(open / close - 1) + rank(ts_mean(scl12_buzz, 5)), 5)",
+    "status": "DONE",
+    "alpha_id": "zqmlP26K",
+    "error": "",
+    "sharpe": 2.2,
+    "fitness": 1.98,
+    "turnover": 0.1209,
+    "returns": 0.1014
+  },
+  {
+    "tag": "nopio_oc_volgate",
+    "expr": "trade_when(ts_std_dev(returns, 20) > 0.02, ts_decay_linear(rank(abs(ts_delta(fnd6_nopio / close, 3))) + rank(-1 * equity / assets) + rank(anl4_ffo_flag) + rank(fnd6_ivaco / close) + rank(fnd6_drlt / close) + rank(open / close - 1), 5), ts_std_dev(returns, 20) < 0.01)",
+    "status": "DONE",
+    "alpha_id": "MPQJKeOk",
+    "error": "",
+    "sharpe": 2.26,
+    "fitness": 2.21,
+    "turnover": 0.0848,
+    "returns": 0.1198
+  },
+  {
+    "tag": "debt_oc_ffo",
+    "expr": "ts_decay_linear(rank(abs(ts_delta(fn_debt_instrument_carrying_amount_a / close, 3))) + rank(-1 * equity / assets) + rank(anl4_ffo_flag) + rank(fnd6_ivaco / close) + rank(fnd6_drlt / close) + rank(open / close - 1), 5)",
+    "status": "DONE",
+    "alpha_id": "rKlZJqK3",
+    "error": "",
+    "sharpe": 1.85,
+    "fitness": 1.67,
+    "turnover": 0.0817,
+    "returns": 0.1013
+  },
+  {
+    "tag": "debt_oc_buzzret",
+    "expr": "ts_decay_linear(rank(abs(ts_delta(fn_debt_instrument_carrying_amount_a / close, 3))) + rank(-1 * equity / assets) + rank(anl4_ffo_flag) + rank(fnd6_ivaco / close) + rank(fnd6_drlt / close) + rank(open / close - 1) + rank(ts_mean(scl12_buzz, 5) * (-1 * returns)), 5)",
+    "status": "DONE",
+    "alpha_id": "RR8G2g8b",
+    "error": "",
+    "sharpe": 1.97,
+    "fitness": 1.78,
+    "turnover": 0.1453,
+    "returns": 0.1183
+  },
+  {
+    "tag": "fair_oc_ffo",
+    "expr": "ts_decay_linear(rank(abs(ts_delta(fn_assets_fair_val_a / close, 3))) + rank(-1 * equity / assets) + rank(anl4_ffo_flag) + rank(fnd6_ivaco / close) + rank(fnd6_drlt / close) + rank(open / close - 1), 5)",
+    "status": "DONE",
+    "alpha_id": "vRlW5wbQ",
+    "error": "",
+    "sharpe": 1.84,
+    "fitness": 1.78,
+    "turnover": 0.0892,
+    "returns": 0.1166
+  },
+  {
+    "tag": "fair_oc_buzzret",
+    "expr": "ts_decay_linear(rank(abs(ts_delta(fn_assets_fair_val_a / close, 3))) + rank(-1 * equity / assets) + rank(anl4_ffo_flag) + rank(fnd6_ivaco / close) + rank(fnd6_drlt / close) + rank(open / close - 1) + rank(ts_mean(scl12_buzz, 5) * (-1 * returns)), 5)",
+    "status": "DONE",
+    "alpha_id": "N1rYnomw",
+    "error": "",
+    "sharpe": 1.88,
+    "fitness": 1.74,
+    "turnover": 0.1563,
+    "returns": 0.1332
+  }
+]
