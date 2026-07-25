@@ -208,7 +208,8 @@ generates APA and BibTeX automatically.
 
 ## License and data
 
-Code is MIT licensed — see [LICENSE](LICENSE).
+[LICENSE](LICENSE) is MIT, and it covers the **code**: `src/`, `scripts/`, `tests/`, and the
+agent skills in `.cursor/skills/`.
 
 The `data/` directory is a research archive, not code, and it carries platform-specific
 caveats around BRAIN-derived field metadata and the ownership of submitted alphas. Read
